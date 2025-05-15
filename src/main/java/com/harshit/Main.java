@@ -3,6 +3,7 @@ package com.harshit;
 import com.harshit.lambdaPractice.LambdaExpressionPracticeClass;
 import com.harshit.lambdaPractice.Student;
 import com.harshit.lambdaPractice.Student2;
+import com.harshit.streamsPractice.StreamsPracticeClass;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+        // lambda
         List<Student> l = new ArrayList<>();
         l.add(new Student("Harshit", 100));
         l.add(new Student("Rohit", 30));
@@ -28,5 +29,11 @@ public class Main {
         lambdaClass.performOperationUsingLambda(3,6);
         lambdaClass.printSortingUsingComparatorSorting();
         lambdaClass.printSortingUsingComparableSorting();
+
+
+        //streams
+
+        StreamsPracticeClass streamClass = new StreamsPracticeClass();
+        streamClass.performStreamOperations();
     }
 }
